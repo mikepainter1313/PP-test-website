@@ -156,7 +156,7 @@
 
         <!-- FORM -->
         <div class="lg:col-span-3 fi">
-          <form id="contact-form" novalidate>
+          <form id="contact-form" action="https://formspree.io/f/mdaygkwl" method="POST" novalidate>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
               <div>
                 <label class="form-label" for="name">Your name</label>
@@ -306,16 +306,31 @@
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
     // Form submission handler (front-end only demo)
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const btn = this.querySelector('.submit-btn');
       btn.textContent = 'Sending…';
       btn.disabled = true;
       btn.style.opacity = '0.7';
-      setTimeout(() => {
-        this.style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-      }, 900);
+      try {
+        const res = await fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          this.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          btn.textContent = 'Something went wrong — please try again';
+          btn.disabled = false;
+          btn.style.opacity = '1';
+        }
+      } catch {
+        btn.textContent = 'Something went wrong — please try again';
+        btn.disabled = false;
+        btn.style.opacity = '1';
+      }
     });
 
     const io = new IntersectionObserver(entries => {

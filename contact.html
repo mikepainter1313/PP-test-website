@@ -297,13 +297,15 @@
     <div class="max-w-6xl mx-auto px-6 lg:px-10">
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
-          <img src="brand_assets/PP LOGO NEW.png" alt="Painter &amp; Partners Ltd" style="height:36px;width:auto;margin-bottom:0.75rem;filter:brightness(0) invert(1);">
+          <img src="brand_assets/PP LOGO NEW.png" alt="Painter &amp; Partners Ltd" style="height:36px;width:auto;margin-bottom:0.75rem;opacity:0.9;">
           <p style="color:rgba(255,255,255,0.3);font-size:0.75rem;font-weight:300;margin:0;">&copy; 2025 Painter &amp; Partners Ltd.</p>
+          <p style="color:rgba(255,255,255,0.2);font-size:0.7rem;font-weight:300;margin:0.2rem 0 0;">Company No. 16429725</p>
         </div>
         <div style="display:flex;gap:1.5rem;align-items:center;">
           <a href="index.html" style="color:rgba(255,255,255,0.4);font-size:0.72rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.75)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Home</a>
           <a href="about.html" style="color:rgba(255,255,255,0.4);font-size:0.72rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.75)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">About</a>
           <a href="mailto:info@painterandpartners.co.uk" style="color:rgba(255,255,255,0.4);font-size:0.72rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='#00B4D8'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Email</a>
+          <a href="privacy.html" style="color:rgba(255,255,255,0.4);font-size:0.72rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.75)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Privacy</a>
         </div>
       </div>
     </div>
@@ -349,5 +351,14 @@
     }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
     document.querySelectorAll('.fi').forEach(el => io.observe(el));
   </script>
+
+  <!-- Cookie notice -->
+  <div id="cookie-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1B3A5C;border-top:1px solid rgba(0,180,216,0.25);padding:1rem 1.5rem;">
+    <div style="max-width:1152px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+      <p style="font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:300;color:rgba(255,255,255,0.75);margin:0;">This site uses cookies to understand how visitors use it. <a href="privacy.html" style="color:#00B4D8;text-decoration:underline;">Privacy Policy</a></p>
+      <button onclick="document.getElementById('cookie-bar').style.display='none';localStorage.setItem('cookieOk','1');" style="font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;background:transparent;border:1px solid rgba(0,180,216,0.5);color:#00B4D8;padding:0.45rem 1.1rem;cursor:pointer;white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='#00B4D8';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#00B4D8'">OK</button>
+    </div>
+  </div>
+  <script>if(!localStorage.getItem('cookieOk'))document.getElementById('cookie-bar').style.display='block';</script>
 </body>
 </html>

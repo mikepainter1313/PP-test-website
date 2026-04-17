@@ -48,6 +48,20 @@
 
     .tag { display:inline-block;padding:0.22rem 0.7rem;border:1px solid #D6E8EF;border-radius:999px;font-size:0.7rem;font-weight:400;letter-spacing:0.03em;color:#7F9BA6;background:#fff; }
 
+    /* Chapter float-right images — stack on mobile, float on desktop */
+    .chapter-img-right {
+      width: 100%; height: 180px; overflow: hidden; margin: 0 0 1rem 0;
+      position: relative; opacity: 0.92; flex-shrink: 0;
+    }
+    .chapter-img-right .fade-left { display: none; }
+    @media (min-width: 480px) {
+      .chapter-img-right {
+        float: right; width: var(--img-w, 175px); height: var(--img-h, 220px);
+        margin: 0 0 0.75rem 1.5rem;
+      }
+      .chapter-img-right .fade-left { display: block; }
+    }
+
     /* Timeline */
     .timeline { position: relative; padding-left: 2rem; }
     .timeline::before {
@@ -177,10 +191,10 @@
           </div>
           <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:#1B3A5C;margin-bottom:1rem;">TESTING MYSELF IN BIGGER WATER</h2>
           <!-- Pr2 — portrait, floated right -->
-          <div style="float:right;width:175px;height:220px;overflow:hidden;margin:0 0 0.75rem 1.5rem;position:relative;opacity:0.92;flex-shrink:0;">
+          <div class="chapter-img-right" style="--img-w:175px;--img-h:220px;">
             <img src="brand_assets/Pr2.jpeg" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(0.15) contrast(1.05);">
             <div style="position:absolute;inset:0;background:rgba(46,134,171,0.08);"></div>
-            <div style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
+            <div class="fade-left" style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
           </div>
           <p style="font-size:0.9rem;line-height:1.9;font-weight:300;color:#2C3E50;margin-bottom:1.25rem;">I crossed to England to study a BSc in Entertainment Technologies at Portsmouth, then a PGCE at Plymouth. My early career was split in two: by day, lecturing and working as a technician at Plymouth City College on their modern music course. By night and weekends, touring the south coast with a band, recording albums, freelancing as a live sound and studio engineer. Surfer towns and music venues. The best education I ever had.</p>
           <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
@@ -214,10 +228,10 @@
           </div>
           <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:#1B3A5C;margin-bottom:1rem;">BOA — AND BUILDING FROM SCRATCH</h2>
           <!-- Pr5 — medium portrait, floated right, teal wash -->
-          <div style="float:right;width:118px;height:152px;overflow:hidden;margin:0 0 0.75rem 1.5rem;position:relative;opacity:0.92;flex-shrink:0;">
+          <div class="chapter-img-right" style="--img-w:118px;--img-h:152px;">
             <img src="brand_assets/Pr5.jpeg" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(0.15) contrast(1.05);">
             <div style="position:absolute;inset:0;background:rgba(0,180,216,0.08);"></div>
-            <div style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
+            <div class="fade-left" style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
           </div>
           <p style="font-size:0.9rem;line-height:1.9;font-weight:300;color:#2C3E50;margin-bottom:1.25rem;">In 2016 I joined BOA (one of the UK's most prestigious music and arts academies) as Assistant Principal. I transformed the digital, creative arts and music departments, elevated events and partnerships, and played a central role in pushing BOA to the top of the national league tables. It was here I became an expert in data systems, assessment, and causal analysis. When BOA expanded into a multi-academy trust, I became Group Director — working closely with the founding CEO and two inspirational Principal Designates to design two new academies from the ground up: BOA Digital and BOA Stage and Screen Production Academy. Everything from a blank piece of paper.</p>
           <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
@@ -235,10 +249,10 @@
           <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:#1B3A5C;margin-bottom:1rem;">PRINCIPAL. THE RIDE OF A LIFETIME.</h2>
           <!-- Pr4 — portrait, floated right, navy wash -->
           <div style="overflow:hidden;margin-bottom:1rem;">
-            <div style="float:right;width:210px;height:260px;overflow:hidden;margin:0 0 0.75rem 1.5rem;position:relative;opacity:0.92;flex-shrink:0;">
+            <div class="chapter-img-right" style="--img-w:210px;--img-h:260px;">
               <img src="brand_assets/Pr4.jpeg" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;object-position:center center;filter:grayscale(0.15) contrast(1.05);">
               <div style="position:absolute;inset:0;background:rgba(27,58,92,0.08);"></div>
-              <div style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
+              <div class="fade-left" style="position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,#ffffff,transparent);z-index:1;"></div>
             </div>
             <p style="font-size:0.9rem;line-height:1.9;font-weight:300;color:#2C3E50;margin:0;">When BOA Stage and Screen Production Academy opened in 2021, I joined the leadership team on secondment and found something that resonated with me more deeply than anything before. A 16-19 specialist academy training young people for behind-the-scenes careers across stage and screen. It was here I also met my wife. By June 2022, I was Principal. Together with a small, fiercely committed team, we built the best results in the country on our courses, a curriculum unlike anything else in the sector, and an academy that sailed through Ofsted (Good with Outstanding Features) and made a genuine difference to the creative industries of the region.</p>
           </div>

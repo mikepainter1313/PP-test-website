@@ -133,8 +133,22 @@
     }
 
     /* Service card */
+    /* Hm1 standing presence */
+    .hm1-presence { display:none; }
+    @media(min-width:1024px){
+      .hm1-presence {
+        display:block;
+        position:absolute;
+        bottom:0;right:0;
+        height:100%;
+        width:auto;
+        pointer-events:none;
+        z-index:0;
+      }
+    }
+
     .service-card {
-      background: #fff; border: 1px solid #D6E8EF;
+      background: rgba(255,255,255,0.82); border: 1px solid #D6E8EF;
       padding: 2.25rem 2rem; position: relative; overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -310,8 +324,26 @@
   </section>
 
   <!-- SERVICES -->
-  <section id="services" style="background:#F0F7FA;" class="py-20 lg:py-28">
-    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+  <section id="services" style="background:#F0F7FA;position:relative;overflow:hidden;" class="py-20 lg:py-28">
+
+    <!-- Hm1 standing presence — desktop only -->
+    <div class="hm1-presence" aria-hidden="true">
+      <img src="brand_assets/Hm1.png" alt="" style="
+        display:block;height:100%;width:auto;
+        opacity:0.18;
+        filter:contrast(1.08) saturate(0.6);
+        -webkit-mask-image:
+          linear-gradient(to bottom, transparent 0%, black 14%, black 90%, transparent 100%),
+          linear-gradient(to right, transparent 0%, black 22%, black 100%);
+        -webkit-mask-composite: source-in;
+        mask-image:
+          linear-gradient(to bottom, transparent 0%, black 14%, black 90%, transparent 100%),
+          linear-gradient(to right, transparent 0%, black 22%, black 100%);
+        mask-composite: intersect;
+      ">
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-10" style="position:relative;z-index:1;">
       <div class="mb-12 fi">
         <p class="eyebrow mb-4">What I Do</p>
         <hr class="hr-brand mb-6">
@@ -406,7 +438,7 @@
         <p class="eyebrow mb-6" style="color:rgba(0,180,216,0.7);">In Their Words</p>
         <div style="color:rgba(0,180,216,0.15);font-family:Georgia,serif;font-size:5rem;line-height:0.8;margin-bottom:1rem;user-select:none;" aria-hidden="true">"</div>
         <blockquote style="color:rgba(255,255,255,0.88);font-size:clamp(0.95rem,1.6vw,1.1rem);line-height:1.9;font-weight:300;margin:0;">
-          Painter &amp; Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter &amp; Partners don't just advise — they make it happen.
+          Painter &amp; Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike has acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter &amp; Partners don't just advise — they make it happen.
         </blockquote>
       </div>
 

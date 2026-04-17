@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painter & Partners Ltd — Strategy with Soul</title>
+  <meta name="description" content="Painter & Partners Ltd is the consultancy of Michael Painter — strategy, programme management, training and creative production for founder-led businesses and organisations ready to grow.">
+  <link rel="canonical" href="https://painterandpartners.co.uk/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://painterandpartners.co.uk/">
+  <meta property="og:title" content="Painter & Partners Ltd — Strategy with Soul">
+  <meta property="og:description" content="Strategy, programme management, training and creative production — delivered by Michael Painter, a senior leader with twenty years of experience across education and the private sector.">
+  <meta property="og:image" content="https://painterandpartners.co.uk/brand_assets/PP%20LOGO%20NEW.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Painter & Partners Ltd — Strategy with Soul">
+  <meta name="twitter:description" content="Strategy, programme management, training and creative production — delivered by Michael Painter.">
+  <meta name="twitter:image" content="https://painterandpartners.co.uk/brand_assets/PP%20LOGO%20NEW.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1B3A5C',
+            ocean: '#2E86AB',
+            cyan: '#00B4D8',
+            gflash: '#2ECC71',
+            sunyellow: '#F5C518',
+            charcoal: '#2C3E50',
+            muted: '#7F9BA6',
+            divider: '#D6E8EF',
+            ice: '#F0F7FA',
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['Jost', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Jost', sans-serif; color: #2C3E50; background: #fff; -webkit-font-smoothing: antialiased; }
+    /* Prevent browser auto-link detection from overriding text colour in paragraphs */
+    p a:not([href]), p a[href=""] { color: inherit !important; text-decoration: none !important; pointer-events: none; }
+    h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
+
+    .eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #00B4D8;
+    }
+    .hr-brand {
+      width: 2.5rem; height: 2px;
+      background: linear-gradient(90deg, #2E86AB, #00B4D8);
+      border: none; margin: 0;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.75rem;
+      border: 1.5px solid #2E86AB;
+      color: #2E86AB; background: #fff;
+      font-family: 'Jost', sans-serif; font-weight: 500;
+      font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.22s ease, color 0.22s ease;
+    }
+    .btn-primary:hover { background: #2E86AB; color: #fff; }
+    .btn-primary:active { background: #1B3A5C; border-color: #1B3A5C; color: #fff; }
+    .btn-primary:focus-visible { outline: 2px solid #00B4D8; outline-offset: 3px; }
+
+    .btn-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.75rem;
+      border: 1.5px solid #00B4D8;
+      color: #00B4D8; background: #fff;
+      font-family: 'Jost', sans-serif; font-weight: 500;
+      font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.22s ease, color 0.22s ease;
+    }
+    .btn-cta:hover { background: #00B4D8; color: #fff; }
+    .btn-cta:active { background: #0099b8; border-color: #0099b8; color: #fff; }
+    .btn-cta:focus-visible { outline: 2px solid #1B3A5C; outline-offset: 3px; }
+
+    /* Nav */
+    .nav-link {
+      font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #1B3A5C; text-decoration: none;
+      position: relative; padding-bottom: 2px;
+      transition: color 0.2s ease;
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 1px; background: #00B4D8;
+      transition: width 0.25s ease;
+    }
+    .nav-link:hover { color: #2E86AB; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link:focus-visible { outline: 2px solid #00B4D8; outline-offset: 4px; }
+
+    nav.scrolled {
+      background: rgba(255,255,255,0.97) !important;
+      box-shadow: 0 1px 0 #D6E8EF, 0 8px 32px rgba(27,58,92,0.07);
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block; padding: 0.22rem 0.7rem;
+      border: 1px solid #D6E8EF; border-radius: 999px;
+      font-size: 0.7rem; font-weight: 400; letter-spacing: 0.03em;
+      color: #7F9BA6; background: #fff;
+    }
+    .tag-ocean {
+      display: inline-block; padding: 0.22rem 0.7rem;
+      background: rgba(0,180,216,0.07);
+      border: 1px solid rgba(0,180,216,0.2); border-radius: 999px;
+      font-size: 0.7rem; font-weight: 400; letter-spacing: 0.03em;
+      color: #2E86AB;
+    }
+
+    /* Service card */
+    .service-card {
+      background: #fff; border: 1px solid #D6E8EF;
+      padding: 2.25rem 2rem; position: relative; overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: linear-gradient(90deg, #2E86AB, #00B4D8);
+    }
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 48px rgba(46,134,171,0.12), 0 4px 12px rgba(27,58,92,0.06);
+    }
+
+    /* Value card */
+    .value-card {
+      padding: 1.75rem 2rem; border-left: 3px solid #00B4D8;
+      background: #fff;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .value-card:hover {
+      border-left-color: #2ECC71;
+      box-shadow: 0 4px 24px rgba(0,180,216,0.08);
+    }
+
+    /* Edge column */
+    .edge-col {
+      border: 1px solid #D6E8EF; padding: 2.25rem 2rem; background: #F0F7FA;
+    }
+
+    /* Green flash box */
+    .gflash-box {
+      background: linear-gradient(135deg, #1B3A5C 0%, #2263A2 100%);
+      padding: 2rem 2.5rem; position: relative; overflow: hidden;
+    }
+    .gflash-box::after {
+      content: ''; position: absolute;
+      bottom: -30px; right: -30px;
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(46,204,113,0.3) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Stage card */
+    .stage-card {
+      padding-top: 1.5rem;
+    }
+    .stage-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 5.5rem;
+      font-weight: 800;
+      color: rgba(27, 58, 92, 0.1);
+      line-height: 0.9;
+      display: block;
+      margin-bottom: -1.75rem;
+      letter-spacing: -0.04em;
+    }
+
+    /* Fade in */
+    .fi { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fi.on { opacity: 1; transform: translateY(0); }
+
+    /* Testimonial section */
+    .testimonial-section { background: #1B3A5C; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- NAV -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md transition-all duration-300" style="border-bottom: 1px solid #D6E8EF;">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="flex items-center justify-between" style="height: 70px;">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="brand_assets/PP LOGO NEW.png" alt="Painter &amp; Partners Ltd" style="height: 42px; width: auto;">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="nav-link">Work</a>
+          <a href="#philosophy" class="nav-link">Philosophy</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="btn-primary" style="padding: 0.55rem 1.35rem; font-size: 0.73rem;">Contact</a>
+        </div>
+        <button id="menu-btn" class="md:hidden p-2 focus-visible:outline-none" aria-label="Open menu" style="color: #1B3A5C;">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><line x1="0" y1="1" x2="22" y2="1" stroke="currentColor" stroke-width="1.5"/><line x1="0" y1="8" x2="22" y2="8" stroke="currentColor" stroke-width="1.5"/><line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-5 space-y-4 bg-white" style="border-top: 1px solid #D6E8EF;">
+      <a href="#services" class="nav-link block py-1">Work</a>
+      <a href="#philosophy" class="nav-link block py-1">Philosophy</a>
+      <a href="about.html" class="nav-link block py-1">About</a>
+      <a href="contact.html" class="nav-link block py-1">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="relative min-h-screen flex items-center overflow-hidden" style="padding-top: 70px;">
+    <!-- Vanta canvas renders behind content; content sits above via z-index -->
+    <div class="relative max-w-6xl mx-auto px-6 lg:px-10 py-24 lg:py-36 w-full" style="z-index:1;">
+      <div>
+        <p class="eyebrow mb-5" style="color:#00B4D8;">Strategic Consultancy</p>
+        <h1 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3.5vw,3.5rem);font-weight:800;line-height:1.12;letter-spacing:-0.025em;color:#FFFFFF;margin-bottom:1.5rem;">
+          STRATEGY WITH SOUL.<br>
+          <span style="color:#00B4D8;">MADE IN THE WATER.</span><br>
+          BUILT FOR THE BRAVE.
+        </h1>
+        <p style="font-size:1.05rem;line-height:1.85;font-weight:300;color:rgba(255,255,255,0.8);max-width:500px;margin-bottom:2.5rem;">
+          Strategic consultancy for creative organisations and founder-led businesses — from someone who's been in the water a long time.
+        </p>
+        <a href="contact.html" class="btn-primary">Start the Conversation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="philosophy" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="max-w-3xl mb-14 fi">
+        <p class="eyebrow mb-4">The Philosophy</p>
+        <hr class="hr-brand mb-6">
+        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.55rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:#1B3A5C;margin-bottom:1.5rem;">
+          EVERY CHALLENGE IS A SWELL TO READ. EVERY PROJECT IS A WAVE WORTH CATCHING.
+        </h2>
+        <p style="font-size:1rem;line-height:1.85;font-weight:300;color:#2C3E50;">
+          Twenty years building schools, teams, and organisations taught me the same thing the ocean taught me growing up — you can't force it. You read the conditions, you position well, you commit fully, and you ride what comes.
+        </p>
+      </div>
+
+      <!-- Green Flash callout -->
+      <div class="gflash-box mb-14 fi" style="max-width:640px;">
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
+          <span style="width:7px;height:7px;background:#2ECC71;border-radius:50%;display:inline-block;flex-shrink:0;"></span>
+          <p class="eyebrow" style="color:rgba(0,180,216,0.8);margin:0;">The Green Flash</p>
+        </div>
+        <p style="color:rgba(255,255,255,0.9);font-size:0.97rem;line-height:1.85;font-weight:300;position:relative;z-index:1;">
+          "We'd watch every sunset for it — that last moment before the sun disappeared, when the very tip turned an impossible green. Blink and you'd miss it. That's the thing about rare, good things."
+        </p>
+      </div>
+
+      <!-- 4 Stages -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="stage-card fi">
+          <span class="stage-num">01</span>
+          <h3 style="position:relative;z-index:1;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">Read the conditions</h3>
+          <p style="position:relative;z-index:1;font-size:0.875rem;line-height:1.8;color:#2C3E50;font-weight:300;">Understanding your landscape before moving — tides, currents, what's really happening beneath the surface.</p>
+        </div>
+        <div class="stage-card fi" style="transition-delay:0.1s">
+          <span class="stage-num">02</span>
+          <h3 style="position:relative;z-index:1;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">Paddle out</h3>
+          <p style="position:relative;z-index:1;font-size:0.875rem;line-height:1.8;color:#2C3E50;font-weight:300;">The hard, unglamorous work of building systems, teams and foundations that actually hold under pressure.</p>
+        </div>
+        <div class="stage-card fi" style="transition-delay:0.2s">
+          <span class="stage-num">03</span>
+          <h3 style="position:relative;z-index:1;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">Choose your wave</h3>
+          <p style="position:relative;z-index:1;font-size:0.875rem;line-height:1.8;color:#2C3E50;font-weight:300;">Strategic patience. Knowing which opportunities are worth committing to — and which to let pass.</p>
+        </div>
+        <div class="stage-card fi" style="transition-delay:0.3s">
+          <span class="stage-num">04</span>
+          <h3 style="position:relative;z-index:1;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">The ride</h3>
+          <p style="position:relative;z-index:1;font-size:0.875rem;line-height:1.8;color:#2C3E50;font-weight:300;">Executing with full commitment, reading and adapting in real time, making the most of every section.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="background:#F0F7FA;" class="py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="mb-12 fi">
+        <p class="eyebrow mb-4">What I Do</p>
+        <hr class="hr-brand mb-6">
+        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.55rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:#1B3A5C;margin-bottom:1rem;">THREE WAYS I CAN HELP YOU.</h2>
+        <p style="font-size:1rem;line-height:1.8;font-weight:300;color:#2C3E50;max-width:580px;">Whether you're starting something new, delivering something complex, or developing the people around you — this is where I work best.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- SHAPE -->
+        <div class="service-card fi">
+          <p class="eyebrow mb-2" style="color:#2E86AB;">Strategy &amp; Business Development</p>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:#1B3A5C;margin-bottom:1rem;">SHAPE</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;margin-bottom:1.5rem;">I've built institutions from scratch — securing funding, designing facilities, forming partnerships, staffing teams, establishing governance and planning for the long term. I bring that same rigour to founder-led businesses and creative organisations ready to grow. I'm an experienced senior leader, having operated at executive level, including principalship roles with full organisational accountability and group-level directorship, underpinned by extensive operational leadership and management experience.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag">Strategic planning</span><span class="tag">Business development</span><span class="tag">Funding &amp; bidding</span><span class="tag">Governance</span><span class="tag">Team building</span><span class="tag">Partnerships</span><span class="tag">Marketing</span><span class="tag">Subsidiaries</span>
+          </div>
+        </div>
+        <!-- EXECUTE -->
+        <div class="service-card fi" style="transition-delay:0.1s">
+          <p class="eyebrow mb-2" style="color:#2E86AB;">Programme &amp; Project Management</p>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:#1B3A5C;margin-bottom:1rem;">EXECUTE</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;margin-bottom:1.5rem;">MSP qualified and battle-tested across education and private sectors. I've delivered transformational programmes spanning governance, people &amp; culture, technology, app development, international growth, partnerships, outreach, theatre, arts, music, film &amp; TV, construction and refurbishment, events, curriculum, infrastructure, and more. Complex delivery is where I thrive.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag">Programme management</span><span class="tag">Project delivery</span><span class="tag">Technology &amp; apps</span><span class="tag">International expansion</span><span class="tag">Ecommerce</span><span class="tag">Film &amp; TV</span><span class="tag">HR &amp; people</span><span class="tag">Events</span>
+          </div>
+        </div>
+        <!-- UNLOCK -->
+        <div class="service-card fi" style="transition-delay:0.2s">
+          <p class="eyebrow mb-2" style="color:#2E86AB;">Education, Training &amp; Coaching</p>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:#1B3A5C;margin-bottom:1rem;">UNLOCK</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;margin-bottom:1.5rem;">A qualified speaker, teacher, facilitator, coach and mentor with twenty years in post-compulsory education. I design and deliver training that actually changes how people work — the blue sky thinking day, the conference, the office, the classroom, one-to-one, on stage or in the workshop.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag">Teaching &amp; lecturing</span><span class="tag">Coaching &amp; mentoring</span><span class="tag">Staff development</span><span class="tag">Workshops</span><span class="tag">Public speaking</span><span class="tag">Curriculum design</span><span class="tag">Online courses</span><span class="tag">Accreditation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE EDGE -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="mb-12 fi">
+        <p class="eyebrow mb-4">The Edge</p>
+        <hr class="hr-brand mb-6">
+        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.55rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:#1B3A5C;margin-bottom:1rem;">WHERE MOST CONSULTANTS STOP, I'M JUST GETTING STARTED.</h2>
+        <p style="font-size:1rem;line-height:1.8;font-weight:300;color:#2C3E50;max-width:680px;">I don't just think strategically — I build things. From data models and dashboards to brand assets and media production, I bring a hands-on digital and creative capability that means less time briefing others, and more time moving fast.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+        <div class="edge-col fi">
+          <p class="eyebrow mb-2">Creative Making</p>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">Design, media &amp; production</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;margin-bottom:1.25rem;">I design, build and produce — not just advise. I bring a creative flare to strategy and execution, using my craft to develop assets that drive alignment and change — from brand and digital to pitch decks, presentations and stakeholder communications — taking ideas from blank page to impactful delivery. No need for outsourcing.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag-ocean">Graphic design</span><span class="tag-ocean">Web design</span><span class="tag-ocean">CAD</span><span class="tag-ocean">Music production</span><span class="tag-ocean">Sound design</span><span class="tag-ocean">Media production</span><span class="tag-ocean">Songwriting</span><span class="tag-ocean">Video &amp; film</span>
+          </div>
+        </div>
+        <div class="edge-col fi" style="transition-delay:0.1s">
+          <p class="eyebrow mb-2">Digital Power</p>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;color:#1B3A5C;margin-bottom:0.75rem;">Data, technology &amp; AI</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;margin-bottom:1.25rem;">Exceptionally fast and fluent with technology, I pick up new tools quickly and work at pace. I move easily across spreadsheets, project management platforms, office and creative tools — using them to analyse information, identify lines of enquiry, clarify complexity and present it clearly to solve problems and move work forward. I'm also a considered adopter of AI, embedding it into my workflow and build environments to accelerate delivery, enhance outputs and stress-test ideas.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag-ocean">Excel &amp; data analysis</span><span class="tag-ocean">Data visualisation</span><span class="tag-ocean">AI tools</span><span class="tag-ocean">Digital presentations</span><span class="tag-ocean">Systems &amp; software</span><span class="tag-ocean">Fast learning</span><span class="tag-ocean">Problem solving</span><span class="tag-ocean">Process design</span>
+          </div>
+        </div>
+      </div>
+      <div class="fi text-center" style="max-width:640px;margin:0 auto;">
+        <hr class="hr-brand" style="margin:0 auto 2rem;">
+        <blockquote style="font-family:'Syne',sans-serif;font-size:clamp(1.05rem,2vw,1.3rem);font-weight:600;line-height:1.55;color:#1B3A5C;font-style:italic;">
+          "In twenty years I've never met a problem I couldn't find a way through — usually faster, and with better tools, than anyone expected."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial-section py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto text-center fi">
+        <p class="eyebrow mb-6" style="color:rgba(0,180,216,0.75);">In Their Words</p>
+        <div style="margin-bottom:1.5rem;user-select:none;" aria-hidden="true">
+          <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.15;">
+            <path d="M0 36V22.5C0 10.5 7.5 3 22.5 0L24 3C16.5 4.5 12 9 12 15H21V36H0ZM27 36V22.5C27 10.5 34.5 3 49.5 0L51 3C43.5 4.5 39 9 39 15H48V36H27Z" fill="white"/>
+          </svg>
+        </div>
+        <blockquote style="color:rgba(255,255,255,0.9);font-size:clamp(0.97rem,1.8vw,1.15rem);line-height:1.9;font-weight:300;margin-bottom:2rem;">
+          Painter &amp; Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter &amp; Partners don't just advise — they make it happen.
+        </blockquote>
+        <div style="display:flex;align-items:center;justify-content:center;gap:0.875rem;">
+          <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,180,216,0.4);">
+            <img src="brand_assets/Pete.jpeg" alt="Pete Morris" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <div style="text-align:left;">
+            <p style="color:#fff;font-weight:500;font-size:0.875rem;margin:0;">Pete Morris</p>
+            <p style="color:rgba(255,255,255,0.45);font-size:0.78rem;font-weight:300;margin:0;">CEO &amp; Founder, Vault X</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section style="background:#F0F7FA;" class="py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="mb-12 fi">
+        <p class="eyebrow mb-4">What I Stand For</p>
+        <hr class="hr-brand mb-6">
+        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.55rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:#1B3A5C;margin-bottom:1rem;">FOUR WORDS. NON-NEGOTIABLE.</h2>
+        <p style="font-size:1rem;line-height:1.8;font-weight:300;color:#2C3E50;max-width:580px;">These aren't aspirational. They're not a brand exercise. They're the values I've held throughout a twenty-year career — and the ones I use to decide who I work with, and how I work with them.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="value-card fi">
+          <h3 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;letter-spacing:0.06em;margin-bottom:0.75rem;">INTEGRITY</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;">I do what I say I will do. I say what I actually think. I've turned down opportunities that didn't sit right, and I've walked away from situations that asked me to compromise what I believed. I'd rather be honest and trusted than comfortable and quiet.</p>
+        </div>
+        <div class="value-card fi" style="transition-delay:0.1s">
+          <h3 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;letter-spacing:0.06em;margin-bottom:0.75rem;">INCLUSION</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;">Twenty years in education taught me that talent is everywhere — and that systems often fail the people who need them most. I've spent my career building environments where everyone has a real shot. I bring that same lens to every organisation I work with.</p>
+        </div>
+        <div class="value-card fi" style="transition-delay:0.2s">
+          <h3 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;letter-spacing:0.06em;margin-bottom:0.75rem;">KINDNESS</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;">Not softness. Kindness. There's a difference. The best leaders I've known — and the best organisations I've built — were places where people felt genuinely cared for. That's not a nice-to-have. It's a performance strategy. Kind cultures are resilient cultures.</p>
+        </div>
+        <div class="value-card fi" style="transition-delay:0.3s">
+          <h3 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1B3A5C;letter-spacing:0.06em;margin-bottom:0.75rem;">CREATIVITY</h3>
+          <p style="font-size:0.875rem;line-height:1.85;font-weight:300;color:#2C3E50;">I've never met a problem I couldn't find a new way into. Creativity isn't just what I do — it's how I think. I bring it to strategy, to systems, to data, to people. The most elegant solution is rarely the obvious one. I like finding the one nobody thought of.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKEDIN FEED -->
+  <section class="py-16 lg:py-20" style="background:#fff;">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="mb-8 fi">
+        <p class="eyebrow mb-4">On LinkedIn</p>
+        <hr class="hr-brand">
+      </div>
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-c547c28b-992c-4a60-a15d-b9fce6a857dc" data-elfsight-app-lazy></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#1B3A5C;" class="py-12">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div>
+          <img src="brand_assets/PP LOGO NEW.png" alt="Painter &amp; Partners Ltd" style="height:38px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);">
+          <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;font-weight:300;margin:0;">&copy; 2025 Painter &amp; Partners Ltd. All rights reserved.</p>
+          <p style="color:rgba(255,255,255,0.25);font-size:0.73rem;font-weight:300;margin:0.2rem 0 0;">Midlands, UK — working nationally and internationally.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;text-align:right;">
+          <a href="mailto:info@painterandpartners.co.uk" style="color:rgba(255,255,255,0.55);font-size:0.82rem;font-weight:300;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#00B4D8'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">info@painterandpartners.co.uk</a>
+          <a href="https://linkedin.com/in/michaelppainter" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.55);font-size:0.82rem;font-weight:300;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#00B4D8'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">LinkedIn</a>
+          <div style="display:flex;gap:1.5rem;justify-content:flex-end;margin-top:0.5rem;">
+            <a href="about.html" style="color:rgba(255,255,255,0.3);font-size:0.7rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">About</a>
+            <a href="contact.html" style="color:rgba(255,255,255,0.3);font-size:0.7rem;font-weight:400;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanta animated hero background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: '#hero',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1B3A5C
+    });
+  </script>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Smooth scroll anchor links with nav offset
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Fade in on scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+PAINTER & PARTNERS LTD — COMPLETE WEBSITE BRIEF
+
+SECTION 1 — BRAND GUIDELINES
+Logo
+The logo consists of a circular wave icon and the wordmark "Painter & Partners Ltd". The wave icon graduates from deep navy through mid ocean blue to bright cyan with white foam highlights. The wordmark uses deep navy for "PAINTER" and bright cyan for "& PARTNERS LTD". The logo should always appear on white or very light backgrounds. Do not place the logo on dark or heavily saturated backgrounds.
+Colour Palette
+Primary background: #FFFFFF — clean white, used for all main page backgrounds
+Secondary background: #F0F7FA — very pale ice blue, used for alternating sections and cards
+Deep navy (logo dark): #1B3A5C — used for primary headings, nav, and strong text elements
+Ocean blue (logo mid): #2E86AB — used for subheadings, links, and secondary UI elements
+Cyan (logo bright): #00B4D8 — used for highlighted text, active states, borders and interactive elements
+Green flash accent: #2ECC71 — used sparingly and only for special moments — the green flash motif, key callouts, moments of significance
+Sun yellow accent: #F5C518 — used sparingly for warmth and highlights — the sun and horizon motif only
+Body text: #2C3E50 — dark charcoal, used for all paragraph text
+Muted text: #7F9BA6 — soft blue-grey, used for supporting text, labels and captions
+Dividers / borders: #D6E8EF — pale blue-grey, used for section borders and card outlines
+Typography
+All type is sans-serif throughout — clean, modern, geometric. No serif fonts anywhere on the site. Choose a distinctive, characterful sans-serif that feels fresh and considered rather than defaulting to mainstream choices. Avoid Inter, Roboto and Arial.
+Headings use capitalisation prominently — section headings and key statements in uppercase or title case for impact and clarity. Body text in sentence case.
+Type hierarchy:
+
+H1 (hero headline): large, bold, uppercase, commanding
+H2 (section heading): medium-large, uppercase or title case, strong weight
+H3 (card/subsection heading): medium, title case, medium weight
+Body: light weight, generous line height (1.8), easy to read
+Labels / eyebrows: small, uppercase, wide letter spacing, used above headings to introduce sections
+Buttons: uppercase, wide letter spacing, medium weight
+
+Tone and Feel
+Light, open and airy. White space is generous. The ocean and surf references feel natural and woven in — never forced or gimmicky. Think premium coastal lifestyle brand rather than surf shop. Clean lines, considered typography, restrained use of colour. Green flash and sun yellow appear only in moments of significance, not as decorative wallpaper. The overall feel is confident, warm and human.
+Buttons
+Primary button: white background, #2E86AB ocean blue border and text, hover fills with #2E86AB and text turns white.
+Secondary button / CTA: #00B4D8 cyan border and text on white background, hover fills cyan, text turns white.
+Imagery Direction
+Clean, natural, light-filled. Ocean, coastline, surf, wide open skies. People in natural environments — not staged corporate shots. Aerial or wide landscape shots work well as hero backgrounds. Always light and optimistic in mood. Golden hour light preferred. Never dark, moody or heavily filtered.
+
+SECTION 2 — SITE STRUCTURE & CONTENT
+Site owner: Michael Painter, independent consultant and founder of Painter & Partners Ltd
+Pages: Homepage (single scrolling page) / About (separate page) / Contact (separate page)
+
+HOMEPAGE
+Navigation
+Logo left. Links right: Work (scrolls to services section) / Philosophy (scrolls to philosophy section) / About (separate page) / Contact (separate page). Sticky header.
+
+Hero Section
+Headline: "STRATEGY WITH SOUL. MADE IN THE WATER. BUILT FOR THE BRAVE."
+Subheading: "Strategic consultancy for creative organisations and founder-led businesses — from someone who's been in the water a long time."
+CTA button: "START THE CONVERSATION →" links to Contact page
+
+Philosophy Section
+Section label: "THE PHILOSOPHY"
+Heading: "EVERY CHALLENGE IS A SET TO READ. EVERY PROJECT IS A WAVE WORTH CATCHING."
+Body: "Twenty years building schools, teams, and organisations taught me the same thing the ocean taught me growing up — you can't force it. You read the conditions, you position well, you commit fully, and you ride what comes."
+Callout box labelled "THE GREEN FLASH":
+"We'd watch every sunset for it — that last moment before the sun disappeared, when the very tip turned an impossible green. Blink and you'd miss it. That's the thing about rare, good things."
+Four numbered stages:
+
+Read the conditions — "Understanding your landscape before moving — tides, currents, what's really happening beneath the surface."
+Paddle out — "The hard, unglamorous work of building systems, teams and foundations that actually hold under pressure."
+Choose your wave — "Strategic patience. Knowing which opportunities are worth committing to — and which to let pass."
+The ride — "Executing with full commitment, reading and adapting in real time, making the most of every section."
+
+
+Services Section
+Section label: "WHAT I DO"
+Heading: "THREE WAYS I CAN HELP YOU."
+Intro: "Whether you're starting something new, delivering something complex, or developing the people around you — this is where I work best."
+Three service cards:
+Card 1 — "SHAPE" / Strategy & Business Development
+"I've built institutions from scratch — securing funding, designing facilities, forming partnerships, staffing teams, establishing governance and planning for the long term. I bring that same rigour to founder-led businesses and creative organisations ready to grow."
+Tags: Strategic planning, Business development, Funding & bidding, Governance, Team building, Partnerships, Marketing, Subsidiaries
+Card 2 — "EXECUTE" / Programme & Project Management
+"MSP qualified and battle-tested across education and private sectors. I've delivered transformational programmes spanning technology, app development, international expansion, film & TV, events, curriculum and more. Complex delivery is where I thrive."
+Tags: Programme management, Project delivery, Technology & apps, International expansion, Ecommerce, Film & TV, HR & people, Events
+Card 3 — "UNLOCK" / Education, Training & Coaching
+"A qualified teacher, facilitator, coach and mentor with twenty years in post-compulsory education. I design and deliver training that actually changes how people work — in the classroom, one-to-one, on stage or in the workshop."
+Tags: Teaching & lecturing, Coaching & mentoring, Staff development, Workshops, Public speaking, Curriculum design, Online courses, Accreditation
+
+The Edge Section
+Section label: "THE EDGE"
+Heading: "WHERE MOST CONSULTANTS STOP, I'M JUST GETTING STARTED."
+Body: "I don't just think strategically — I build things. From data models and dashboards to brand assets and media production, I bring a hands-on digital and creative capability that means less time briefing others, and more time moving fast."
+Two columns:
+Column 1 — "CREATIVE MAKING" / Design, media & production
+"I design, build and produce — not just advise. From brand identity and web to music, sound and video, I can take a creative brief from concept to finished output without needing to outsource the craft."
+Tags: Graphic design, Web design, CAD, Music production, Sound design, Media production, Songwriting, Video & film
+Column 2 — "DIGITAL POWER" / Data, technology & AI
+"Exceptionally fast and comfortable with technology — I pick up new tools quickly, work at pace, and use them to deliver sharper, cleaner results. I'm an advanced Excel and data user, strong at presenting complex information clearly, and a considered adopter of AI across my workflow."
+Tags: Excel & data analysis, Data visualisation, AI tools, Digital presentations, Systems & software, Fast learning, Problem solving, Process design
+Closing quote: "In twenty years I've never met a problem I couldn't find a way through — usually faster, and with better tools, than anyone expected."
+
+Testimonial Section
+Section label: "IN THEIR WORDS"
+Quote: "Painter & Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter & Partners don't just advise — they make it happen."
+Attribution: Pete Morris, CEO & Founder, Vault X
+Photo: placeholder circle with initials PM (photo to be replaced later)
+
+Values Section
+Section label: "WHAT I STAND FOR"
+Heading: "FOUR WORDS. NON-NEGOTIABLE."
+Intro: "These aren't aspirational. They're not a brand exercise. They're the values I've held throughout a twenty-year career — and the ones I use to decide who I work with, and how I work with them."
+Four values:
+
+INTEGRITY — "I do what I say I will do. I say what I actually think. I've turned down opportunities that didn't sit right, and I've walked away from situations that asked me to compromise what I believed. I'd rather be honest and trusted than comfortable and quiet."
+INCLUSION — "Twenty years in education taught me that talent is everywhere — and that systems often fail the people who need them most. I've spent my career building environments where everyone has a real shot. I bring that same lens to every organisation I work with."
+KINDNESS — "Not softness. Kindness. There's a difference. The best leaders I've known — and the best organisations I've built — were places where people felt genuinely cared for. That's not a nice-to-have. It's a performance strategy. Kind cultures are resilient cultures."
+CREATIVITY — "I've never met a problem I couldn't find a new way into. Creativity isn't just what I do — it's how I think. I bring it to strategy, to systems, to data, to people. The most elegant solution is rarely the obvious one. I like finding the one nobody thought of."
+
+
+ABOUT PAGE
+Section label: "ABOUT MICHAEL"
+Heading: "A LIFE LIVED IN THE WATER."
+Intro: "I grew up in Jersey, Channel Islands — outside, on the beach, in the waves. My dad shaped surfboards and read the ocean. My mum taught primary school and read people. Between them, they gave me everything I needed. What follows is the story of how a surfer kid with a head full of music and a love of making things ended up building schools, scaling businesses, and finding his own way — on his own terms."
+Six timeline chapters, each with a label, period, location, heading and body text:
+Chapter 1
+Label: "LEARNING TO READ THE WATER"
+Period: Growing up / Location: Jersey, C.I.
+Heading: "THE ISLAND THAT SHAPED ME"
+"Jersey in the 1980s and 90s was a particular kind of childhood. The ocean was everywhere — my dad surfed, shaped boards, and taught me to read a swell before I could read a book. My mum, a primary school teacher, gave me a love of learning and people. Between the two of them, I developed an instinct for both making things and understanding them. I picked up instruments early — guitar, piano, and others — played in bands, performed in orchestras. At A-level I studied Maths, Physics, Media and Graphics. Creative and analytical in equal measure."
+Tags: Jersey C.I., Surfing, Music, Making things, Maths & physics, Media & graphics
+Chapter 2
+Label: "FIRST SESSIONS"
+Period: 2002–2008 / Location: Portsmouth & Plymouth
+Heading: "TESTING MYSELF IN BIGGER WATER"
+"I crossed to England to study a BSc in Entertainment Technologies at Portsmouth, then a PGCE at Plymouth. My early career was split in two: by day, lecturing and working as a technician at Plymouth City College on their modern music course. By night and weekends, touring the south coast with a band, recording albums, freelancing as a live sound and studio engineer. Surfer towns and music venues. The best education I ever had."
+Tags: BSc Entertainment Technologies, PGCE Plymouth, Lecturing, Touring, Recording, Live sound, Studio engineering
+Chapter 3
+Label: "CHOOSING YOUR WAVE"
+Period: 2008–2016 / Location: Stafford
+Heading: "THE CROSSROADS. THE COMMITMENT."
+"In 2008 I joined Stafford College — setting up their modern music practice course and lecturing in music technology and media. Over eight years I was promoted from curriculum leader to faculty manager to head of the faculty of creative industries. Around 2010, a band I was playing guitar in — Terracotta Army — was offered the chance to sign with Sony. I turned it down. Not out of fear, but because teaching felt more like me. More purposeful. More alive."
+Pull quote: "I could see the wave. It was a good one. But I knew, somewhere deep down, it wasn't mine."
+Tags: Stafford College, Curriculum leadership, Faculty management, FE reform, Sony crossroads, Creative industries
+Chapter 4
+Label: "PADDLING OUT"
+Period: 2016–2021 / Location: Birmingham
+Heading: "BOA — AND BUILDING FROM SCRATCH"
+"In 2016 I joined BOA — one of the UK's most prestigious music and arts academies — as Assistant Principal. I transformed the digital, creative arts and music departments, elevated events and partnerships, and played a central role in pushing BOA to the top of the national league tables. When BOA expanded into a multi-academy trust, I became Group Director — working closely with the founding principal to design two new academies from the ground up: BOA Digital and BOA Stage and Screen Production Academy. Everything from a blank piece of paper."
+Tags: BOA Academy, Assistant Principal, Group Director, Academy development, DfE bids, Curriculum design, Procurement, League tables
+Chapter 5
+Label: "OUT THE BACK"
+Period: 2021–2024 / Location: Birmingham
+Heading: "PRINCIPAL. THE RIDE OF A LIFETIME."
+"When BOA Stage and Screen Production Academy opened in 2021, I joined the leadership team on secondment — and found something that resonated with me more deeply than anything before. A 16-19 specialist academy training young people for behind-the-scenes careers across stage and screen. It was here I also met my wife. By June 2022, I was Principal. Together with a small, fiercely committed team, we built the best results in the country on our courses, a curriculum unlike anything else in the sector, and an academy that sailed through Ofsted and made a genuine difference to the creative industries of the region."
+Pull quote: "We were a small team doing extraordinary things. That's always been where I'm happiest."
+Tags: Principal, Stage & screen, Best in country, Ofsted, Industry partnerships, Curriculum innovation, Team building
+Chapter 6
+Label: "BACK TO THE BEACH"
+Period: 2024–Now / Location: Independent
+Heading: "A NEW SESSION. ON MY OWN TERMS."
+"Financial pressures across the academy sector, a change in leadership and a divergence in values brought my time in education to a close. I stepped down gracefully and founded Painter & Partners Ltd. Since then I've worked with Vault X — a fast-scaling consumer brand in Poole, helping build their team, systems and processes, set up a Brazilian subsidiary and develop and patent a new app. I've also mentored the founder of Threewise Entertainment (known for Rock Island Mysteries) as they navigate an exciting creative pivot. And I'm currently developing a range of e-learning materials, releasing my back catalogue of music under an independent label, and preparing to publish a book written during one of the most challenging periods of my life."
+Vault X client card:
+"Started by four friends in a garage in Poole — including Pete Morris, my best man and former bandmate — Vault X has grown into the UK's leading premium trading card accessories brand, with 30 employees, their own building, and operations across every corner of the globe. Their values: be better, be different, be kind."
+Tags: Brazil subsidiary, International expansion, ERP implementation, Governance maturity, People & HR, Patent-pending app, AI & technology, Transformation programme
+Threewise Entertainment client card:
+"Known for Rock Island Mysteries, Threewise were one of the very first industry partners I brought into BOA Stage and Screen — before the academy even opened its doors. Now moving into more innovative territory — new forms, new funding mechanisms — I've had the privilege of advising the founder on how to manage this evolution in a structured, programmatic way."
+Tags: Film & TV, Strategic advisory, Programme management, Creative development, Funding strategy
+Pull quote: "Vault X remind me of the early days at BOA Stage and Screen — a small team, huge ambition, the courage to be different and the kindness to do it right."
+Coda — Coming soon:
+
+"THE BACK CATALOGUE" — Hundreds of songs being released under an independent label.
+"THE BOOK" — Written during one of the most challenging periods of my life. Coming when the time is right.
+
+Closing quote: "I still surf. I still write music. I still believe the best work comes from people who care deeply about what they're building."
+Closing CTA: "START THE CONVERSATION →" links to Contact page
+Testimonial (repeat from homepage):
+Quote: "Painter & Partners don't just advise — they make it happen."
+Attribution: Pete Morris, CEO & Founder, Vault X
+
+CONTACT PAGE
+Section label: "GET IN TOUCH"
+Heading: "LET'S HAVE A CONVERSATION."
+Intro: "I don't do sales calls or slick pitches. If something here has resonated — a service, a project, or a potential partnership — just reach out and tell me a bit about what you're working on. I read every message personally and I'll always respond."
+Contact form fields:
+
+Your name
+Your email
+Your organisation
+Dropdown: "I'm reaching out about..." with options: Strategy & business development / Programme or project management / Education, training or coaching / A potential partnership / Your courses or online content / Something else entirely
+Message field with placeholder: "No need to have it all figured out. Just tell me what's going on and what you're hoping for — I'll take it from there."
+Submit button: "SEND IT →"
+Note below button: "I'll get back to you within one working day. Usually faster."
+
+Contact details:
+
+Email: info@painterandpartners.co.uk
+Phone/WhatsApp: +44 7356 297228 (Business WhatsApp — feel free to message)
+LinkedIn: linkedin.com/in/michaelppainter
+Based in: Midlands, UK — working with clients nationally and internationally
+
+Closing note: "I only work with people I genuinely believe in — so if you're unsure whether we're a fit, just ask. An honest conversation now saves everyone time later."
+
+How I Work Section (on Contact page)
+Section label: "HOW I WORK"
+Heading: "SELECTIVE BY DESIGN."
+Body: "At any given time I work with a small number of clients — typically up to three partnerships running simultaneously, each one different, each one getting my full attention and commitment. I'm selective by design, not by accident. The work is better for it, and so are the relationships."
+Current partnership:
+"My current long-term partnership is with Vault X — a fast-scaling consumer brand in Poole whose values mirror my own: be better, be different, be kind. It's exactly the kind of relationship I look for."
+What I'm drawn to:
+"Beyond my existing commitments, I'm always open to conversations with the right people. I'm particularly interested in working with creative education organisations — universities, academies, schools doing something genuinely different — and purpose-driven organisations in the third sector or social enterprise space. That said, the best partnerships are often the ones you don't see coming. If you think there's something worth exploring, I'd rather have the conversation than not."
+Closing line: "The conversation costs nothing. And you might be surprised where it leads."
+CTA: "GET IN TOUCH →"

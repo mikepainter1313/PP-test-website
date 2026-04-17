@@ -178,6 +178,7 @@
     }
 
     /* Stage card */
+
     .stage-card {
       padding-top: 1.5rem;
     }
@@ -197,7 +198,17 @@
     .fi.on { opacity: 1; transform: translateY(0); }
 
     /* Testimonial section */
-    .testimonial-section { background: #1B3A5C; }
+    .testimonial-section { background:#1B3A5C; }
+    .testimonial-inner { display:flex;flex-direction:column; }
+    .testimonial-photo { position:relative;width:100%;height:320px;overflow:hidden;flex-shrink:0; }
+    .testimonial-photo-fade-right { display:none; }
+    .testimonial-quote { flex:1;padding:3rem 2rem;display:flex;flex-direction:column;justify-content:center; }
+    @media(min-width:768px){
+      .testimonial-inner { flex-direction:row;min-height:500px; }
+      .testimonial-photo { width:42%;height:auto; }
+      .testimonial-photo-fade-right { display:block;position:absolute;inset:0;background:linear-gradient(to right,transparent 65%,#1B3A5C 100%); }
+      .testimonial-quote { padding:4rem 3rem; }
+    }
   </style>
 </head>
 <body class="bg-white">
@@ -346,7 +357,7 @@
         <p class="eyebrow mb-4">The Edge</p>
         <hr class="hr-brand mb-6">
         <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.55rem,3.5vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:#1B3A5C;margin-bottom:1rem;">WHERE MOST CONSULTANTS STOP, I'M JUST GETTING STARTED.</h2>
-        <p style="font-size:1rem;line-height:1.8;font-weight:300;color:#2C3E50;max-width:680px;">I don't just think strategically — I build things. From data models and dashboards to brand assets and media production, I bring a hands-on digital and creative capability that means less time briefing others, and more time moving fast.</p>
+        <p style="font-size:1rem;line-height:1.8;font-weight:300;color:#2C3E50;max-width:680px;">I don't just think strategically — I build things. From systems, policy, project plans, data models and dashboards to brand assets, media production, and visual comms. I bring a hands-on digital and creative capability that means less time briefing others, and more time moving fast.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
         <div class="edge-col fi">
@@ -376,28 +387,29 @@
   </section>
 
   <!-- TESTIMONIAL -->
-  <section class="testimonial-section py-20 lg:py-28">
-    <div class="max-w-6xl mx-auto px-6 lg:px-10">
-      <div class="max-w-3xl mx-auto text-center fi">
-        <p class="eyebrow mb-6" style="color:rgba(0,180,216,0.75);">In Their Words</p>
-        <div style="margin-bottom:1.5rem;user-select:none;" aria-hidden="true">
-          <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.15;">
-            <path d="M0 36V22.5C0 10.5 7.5 3 22.5 0L24 3C16.5 4.5 12 9 12 15H21V36H0ZM27 36V22.5C27 10.5 34.5 3 49.5 0L51 3C43.5 4.5 39 9 39 15H48V36H27Z" fill="white"/>
-          </svg>
-        </div>
-        <blockquote style="color:rgba(255,255,255,0.9);font-size:clamp(0.97rem,1.8vw,1.15rem);line-height:1.9;font-weight:300;margin-bottom:2rem;">
-          Painter &amp; Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter &amp; Partners don't just advise — they make it happen.
-        </blockquote>
-        <div style="display:flex;align-items:center;justify-content:center;gap:0.875rem;">
-          <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,180,216,0.4);">
-            <img src="brand_assets/Pete.jpeg" alt="Pete Morris" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
-          </div>
-          <div style="text-align:left;">
-            <p style="color:#fff;font-weight:500;font-size:0.875rem;margin:0;">Pete Morris</p>
-            <p style="color:rgba(255,255,255,0.45);font-size:0.78rem;font-weight:300;margin:0;">CEO &amp; Founder, Vault X</p>
-          </div>
+  <section class="testimonial-section" style="overflow:hidden;">
+    <div class="testimonial-inner fi">
+
+      <!-- Left: Photo panel -->
+      <div class="testimonial-photo">
+        <img src="brand_assets/Pete.jpeg" alt="Pete Morris" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,#1B3A5C 0%,rgba(27,58,92,0.3) 55%,transparent 100%);"></div>
+        <div class="testimonial-photo-fade-right"></div>
+        <div style="position:absolute;bottom:1.75rem;left:2rem;">
+          <p style="color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin:0;letter-spacing:0.02em;">Pete Morris</p>
+          <p style="color:rgba(0,180,216,0.8);font-size:0.78rem;font-weight:300;margin:0;letter-spacing:0.04em;">CEO &amp; Founder, Vault X</p>
         </div>
       </div>
+
+      <!-- Right: Quote panel -->
+      <div class="testimonial-quote">
+        <p class="eyebrow mb-6" style="color:rgba(0,180,216,0.7);">In Their Words</p>
+        <div style="color:rgba(0,180,216,0.15);font-family:Georgia,serif;font-size:5rem;line-height:0.8;margin-bottom:1rem;user-select:none;" aria-hidden="true">"</div>
+        <blockquote style="color:rgba(255,255,255,0.88);font-size:clamp(0.95rem,1.6vw,1.1rem);line-height:1.9;font-weight:300;margin:0;">
+          Painter &amp; Partners have been invaluable to Vault X. At a point where we were experiencing hyper-growth, our resources and processes had become stretched. Mike acted as a trusted, diligent partner across a wide variety of key projects — from people and governance to regional expansion and app development. Painter &amp; Partners don't just advise — they make it happen.
+        </blockquote>
+      </div>
+
     </div>
   </section>
 

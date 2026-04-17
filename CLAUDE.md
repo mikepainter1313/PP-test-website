@@ -46,6 +46,11 @@
 - **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
 - **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
 
+## Deployment Workflow
+- The production pipeline is: **local → GitHub → Vercel** (auto-deployed on push).
+- All changes are tested on localhost first. Never commit or push to GitHub unless the user explicitly says to ("push that", "commit those changes", "push to GitHub" etc.).
+- When the user does ask to push, commit all changed files and push to `origin main`.
+
 ## Hard Rules
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it

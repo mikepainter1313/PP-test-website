@@ -226,6 +226,36 @@
       .testimonial-quote { padding:4rem 3rem; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://painterandpartners.co.uk/#organization",
+        "name": "Painter & Partners Ltd",
+        "url": "https://painterandpartners.co.uk",
+        "logo": "https://painterandpartners.co.uk/brand_assets/PP%20LOGO%20NEW.png",
+        "email": "mike@painterandpartners.co.uk",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://painterandpartners.co.uk/about.html#michael-painter"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Painter & Partners Ltd",
+        "url": "https://painterandpartners.co.uk",
+        "description": "Strategic consultancy for creative organisations and founder-led businesses — strategy, programme management, training and creative production.",
+        "areaServed": "GB",
+        "serviceType": ["Strategy Consulting", "Programme Management", "Training", "Creative Production"],
+        "provider": {
+          "@id": "https://painterandpartners.co.uk/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
 
